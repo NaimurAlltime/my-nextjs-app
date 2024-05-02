@@ -9,7 +9,7 @@ const Counter = () => {
         onClick={() => {
           setCount(count + 1);
         }}
-        className="mt-5 border border-gray-400 py-2 px-3 mr-4"
+        className="mt-5 btn btn-active btn-primary mr-4"
       >
         Increace
       </button>
@@ -18,7 +18,7 @@ const Counter = () => {
         onClick={() => {
           setCount(count - 1);
         }}
-        className="mt-5 ms-4 border border-gray-400 py-2 px-3 mr-4"
+        className="mt-5 ms-4 btn btn-active btn-accent mr-4"
       >
         Decreace
       </button>
