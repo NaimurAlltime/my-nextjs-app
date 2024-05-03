@@ -6,7 +6,11 @@ export const metadata = {
 };
 
 const Homepage = async () => {
-  const res = await fetch("http://localhost:5000/shoes");
+  const res = await fetch("http://localhost:5000/shoes", {
+    next: {
+      revalidate: 30,
+    },
+  });
   const shoes = await res.json();
   // console.log(shoes);
   return (

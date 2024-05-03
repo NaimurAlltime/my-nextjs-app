@@ -4,19 +4,19 @@
       "id": 1,
       "title": "Men's Running Shoes",
       "description": "High-performance running shoes for men, designed for comfort and durability.",
-      "price": 89.99
+      "price": 100
     },
     {
       "id": 2,
       "title": "Women's Sneakers",
       "description": "Fashionable sneakers for women, featuring a stylish design and lightweight construction.",
-      "price": 79.99
+      "price": 120
     },
     {
       "id": 3,
       "title": "Kids' Sports Shoes",
       "description": "Colorful sports shoes for kids, perfect for outdoor activities and playtime.",
-      "price": 49.99
+      "price": 125
     },
     {
       "id": 4,
