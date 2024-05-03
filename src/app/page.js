@@ -14,6 +14,8 @@ const Homepage = async () => {
   });
   const shoes = await res.json();
   // console.log(shoes);
+
+  throw new Error();
   return (
     <div>
       <h1 className="text-3xl text-center">My NextJs App</h1>
