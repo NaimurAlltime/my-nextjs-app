@@ -1,5 +1,5 @@
 import Image from "next/image";
-import nextJSImage from "../../assets/next-js-img.jpg";
+import nextJSImage from "@/assets/next-js-img.jpg";
 
 export const metadata = {
   title: "Gellery",
