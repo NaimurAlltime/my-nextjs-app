@@ -29,6 +29,9 @@ const Navbar = () => {
               <Link href="/about">About</Link>
             </li>
             <li>
+              <Link href="/gellery">Gellery</Link>
+            </li>
+            <li>
               <a>Parent</a>
               <ul className="p-2">
                 <li>
@@ -50,6 +53,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           <li>
             <Link href="/about">About</Link>
+          </li>
+          <li>
+            <Link href="/gellery">Gellery</Link>
           </li>
           <li>
             <details>
