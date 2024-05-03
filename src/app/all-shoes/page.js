@@ -1,25 +1,14 @@
-import Counter from "@/components/Counter/Counter";
-import Link from "next/link";
-
-export const metadata = {
-  title: "Homepage",
-  description: "This is my homepage",
-};
-
-const Homepage = async () => {
+const AllShuePage = async () => {
   const res = await fetch("http://localhost:5000/shoes", {
-    next: {
-      revalidate: 30,
-    },
+    cache: "no-store",
   });
   const shoes = await res.json();
-  // console.log(shoes);
+
   return (
     <div>
-      <h1 className="text-3xl text-center">My NextJs App</h1>
-      <Counter />
+      <h2 className="text-3xl font-medium text-center">All Shue Page</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 py-5 max-w-7xl mx-auto">
-        {shoes.slice(0, 3).map((shoe) => (
+        {shoes.map((shoe) => (
           <div key={shoe.id} className="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img
@@ -45,15 +34,8 @@ const Homepage = async () => {
           </div>
         ))}
       </div>
-      <div className="w-full flex justify-center">
-        <Link href="/all-shoes">
-          <button className="btn btn-outline btn-info rounded-md">
-            See More
-          </button>
-        </Link>
-      </div>
     </div>
   );
 };
 
-export default Homepage;
+export default AllShuePage;
