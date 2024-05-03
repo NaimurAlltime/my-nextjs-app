@@ -1,4 +1,5 @@
 import Image from "next/image";
+import nextJSImage from "../../assets/next-js-img.jpg";
 
 const GelleryPage = () => {
   return (
@@ -24,6 +25,16 @@ const GelleryPage = () => {
           width={500}
           height={500}
           src="https://img.freepik.com/premium-photo/technology-data_343960-8571.jpg?w=900"
+          className="mx-auto"
+          alt="next image"
+        />
+      </div>
+      <div>
+        <h1 className="text-2xl text-center py-5 font-semibold">Local Image</h1>
+        <Image
+          width={500}
+          height={500}
+          src={nextJSImage}
           className="mx-auto"
           alt="next image"
         />
