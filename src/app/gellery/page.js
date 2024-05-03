@@ -1,6 +1,11 @@
 import Image from "next/image";
 import nextJSImage from "../../assets/next-js-img.jpg";
 
+export const metadata = {
+  title: "Gellery",
+  description: "this is gellery page",
+};
+
 const GelleryPage = () => {
   return (
     <div className="mb-12">

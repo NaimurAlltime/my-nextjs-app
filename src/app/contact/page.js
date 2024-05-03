@@ -1,5 +1,10 @@
 import styles from "./Contact.module.css";
 
+export const metadata = {
+  title: "ContactUs",
+  description: "This is my contact us page",
+};
+
 const ContactPage = () => {
   return (
     <div>
